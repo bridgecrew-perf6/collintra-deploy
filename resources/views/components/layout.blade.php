@@ -10,7 +10,7 @@
     <title>Collintra</title>
     @livewireStyles
 </head>
-<body class="p-3 text-lg" style="font-family: Consolas, Verdana">
+<body class="p-3 text-lg" style="font-family: Consolas, Verdana; background-color: #f7fbff;">
     @include("header")
     {{ $slot }}
     @livewireScripts

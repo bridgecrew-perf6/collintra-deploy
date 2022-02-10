@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .menubtn {
-    @apply text-2xl text-blue-600 font-bold hover:text-blue-400 hover:underline cursor-pointer
+    @apply text-2xl font-bold hover:text-blue-400 hover:underline cursor-pointer
+}
+
+.selected {
+    @apply text-blue-800
 }
 
 input, textarea {
-    @apply border-blue-300 border p-1 rounded-sm
+    @apply border-blue-300 border p-1 rounded-sm text-sm min-w-min
 }
 
 h1 {
