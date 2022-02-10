@@ -15,17 +15,21 @@ input, textarea {
 }
 
 h1 {
-    @apply text-4xl
+    @apply text-4xl mt-6
 }
 
 h2 {
-    @apply text-3xl
+    @apply text-3xl mt-5
 }
 
 h3 {
-    @apply text-2xl
+    @apply text-2xl  mt-5
 }
 
 h4 {
     @apply text-xl
+}
+
+p {
+    @apply mt-2 mb-5
 }
