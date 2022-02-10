@@ -8,6 +8,8 @@
     <title>Collintra</title>
     @livewireStyles
 </head>
+<body class="p-3 text-lg" style="font-family: Consolas, Verdana">
+    @include("header")
     {{ $slot }}
     @livewireScripts
 </body>
