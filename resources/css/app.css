@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .menubtn {
-    @apply text-2xl text-blue-600 font-bold
+    @apply text-2xl text-blue-600 font-bold hover:text-blue-400 hover:underline cursor-pointer
 }
 
 input, textarea {
