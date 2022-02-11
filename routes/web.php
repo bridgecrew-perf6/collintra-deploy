@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
 Route::get('/learn', function () {
-    return view('learn');
+    $articles = Article::with('articles')->get();
+    return view('learn', ['articles' => $articles]);
 });
+
 Route::get('/about', function () {
     return view('about');
 });
