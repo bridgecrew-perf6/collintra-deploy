@@ -18,7 +18,7 @@
 
         </div>
 
-        <div>
+        <div class="prose prose-slate">
             <h1>{{ $currentArticle->title }}</h1>
             {!! $currentArticle->body !!}
         </div>

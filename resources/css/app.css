@@ -13,7 +13,7 @@
 input, textarea {
     @apply border-blue-300 border p-1 rounded-sm text-sm min-w-min
 }
-
+/*
 h1 {
     @apply text-4xl mt-6
 }
@@ -32,8 +32,18 @@ h4 {
 
 p {
     @apply mb-3
-}
+} */
 
 a {
     @apply hover:text-blue-500 cursor-pointer hover:underline !important
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose p {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.prose
+{
+    max-width: 100%;
 }
