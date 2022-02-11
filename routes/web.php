@@ -19,9 +19,14 @@ Route::get('/', function () {
 });
 
 Route::get('/learn', function () {
-    $articles = Article::with('articles')->get();
-    return view('learn', ['articles' => $articles]);
+    return redirect(Article::all()->first()->path());
 });
+
+Route::get('/learn/{article}', function (Article $article) {
+    $articles = Article::with('articles')->get();
+    return view('learn', ['articles' => $articles, 'currentArticle' => $article]);
+});
+
 
 Route::get('/about', function () {
     return view('about');

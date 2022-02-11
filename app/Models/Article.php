@@ -13,4 +13,9 @@ class Article extends Model
     {
         return $this->hasMany(Article::class);
     }
+
+    public function path()
+    {
+        return "/learn/" . $this->id;
+    }
 }

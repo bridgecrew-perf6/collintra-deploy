@@ -31,5 +31,9 @@ h4 {
 }
 
 p {
-    @apply mt-2 mb-5
+    @apply mb-3
+}
+
+a {
+    @apply hover:text-blue-500 cursor-pointer hover:underline !important
 }
