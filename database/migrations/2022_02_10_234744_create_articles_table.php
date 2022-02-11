@@ -17,6 +17,7 @@ class CreateArticlesTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
+            $table->foreignId('article_id')->nullable()->constrained();
             $table->timestamps();
         });
     }

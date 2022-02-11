@@ -20,6 +20,7 @@ class ArticleFactory extends Factory
             'title' => Str::ucfirst($this->faker->word()),
             'body' => "<p>" . implode("</p>
             <p>", $this->faker->paragraphs(15)) . "</p>",
+            'article_id' => null
         ];
     }
 }

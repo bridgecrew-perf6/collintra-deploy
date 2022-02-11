@@ -15,6 +15,13 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        Article::factory(30)->create();
+        $article1 = Article::factory()->create();
+        Article::factory(8)->create(['article_id' => $article1->id]);
+
+        $article2 = Article::factory()->create();
+        Article::factory(15)->create(['article_id' => $article2->id]);
+
+        $article3 = Article::factory()->create();
+        Article::factory(4)->create(['article_id' => $article3->id]);
     }
 }
