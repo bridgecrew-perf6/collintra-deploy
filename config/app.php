@@ -13,7 +13,10 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Collintra'),
+    'definition' => 'A collaborative intranet for collectives to manage internal documentations, processes, courses, with various formats supported (text, images, embedded videos, ...).',
+    'version' => 'v0.1',
+    'version_date' => '12.02.2022',
 
     /*
     |--------------------------------------------------------------------------
