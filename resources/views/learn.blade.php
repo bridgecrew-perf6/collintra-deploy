@@ -3,15 +3,17 @@ use Carbon\Carbon;
 @endphp
 <x-layout>
     <div class="flex w-full space-x-5">
-        <div class="border-r border-blue-400 pr-3 p-1" style="min-width: 200px">
+        <div class="border-r border-blue-400 pr-3 p-1" style="width: 250px;">
             <div>
                 @foreach($articles as $article)
                 @if($article->article_id == null)
-                <div class="font-semibold text-xl {{ $article->is($currentArticle) ? 'selected' : ''}}"><a href="{{ $article->path() }}">{{ $article->title }}</a></div>
-                <div class="ml-5">
+                <div class="font-semibold text-lg h-6 overflow-hidden text-ellipsis whitespace-nowrap {{ $article->is($currentArticle) ? 'selected' : ''}}"><a href="{{ $article->path() }}">{{ $article->title }}</a></div>
+                <div class="ml-5 text-sm">
                     @foreach ($article->articles as $subarticle)
-                    <a href="{{ $subarticle->path() }}">
-                        <div class="hover:bg-blue-300 rounded-sm px-1 hover:text-white">{{ $subarticle->title }}</div>
+                    <a class="no-underline " href="{{ $subarticle->path() }}">
+                        <div class="h-6 overflow-hidden text-ellipsis whitespace-nowrap flex-wrap max-w-sm hover:bg-blue-200 rounded-sm px-1 {{ $subarticle->is($currentArticle)  ? 'text-black bg-blue-200' : 'hover:text-black text-gray-700 '}}">
+                            {{ $subarticle->title }}
+                        </div>
                     </a>
                     @endforeach
                 </div>
