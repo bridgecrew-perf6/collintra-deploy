@@ -32,7 +32,7 @@ class Article extends Model
             return "";
         }
 
-        $body = strip_tags($this->body);
+        $body = trim(strip_tags($this->body));
         $searchPos = strlen($search);
         $searchLength = strlen($search);
 
