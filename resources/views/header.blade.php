@@ -7,7 +7,7 @@
     <div class="flex-1 justify-end mr-5 flex items-center space-x-3">
         @livewire("search")
         <x-menu.button route="/">Home</x-menu.button>
-        <x-menu.button route="learn">Learn</x-menu.button>
-        <x-menu.button route="about">About</x-menu.button>
+        <x-menu.button route="/learn">Learn</x-menu.button>
+        <x-menu.button route="/about">About</x-menu.button>
     </div>
 </header>
