@@ -1,7 +1,7 @@
-<div class="relative">
-    <input class="w-60" type="text" placeholder="Global instant search..." wire:model="search">
+<div class="relative my-1 mt-3 md:mt-1 md:my-0 ">
+    <input class="w-full max-w-lg md:w-60" type="text" placeholder="Global instant search..." wire:model="search">
 
-    @if(trim($search) != '22')
+    @if(trim($search) != '')
     <div class="absolute top-0 bg-blue-50 p-1 rounded-md border-blue-400 border mt-8 space-y-1">
         @foreach ($articles as $article)
         <div class="border-blue-700 border-y">
