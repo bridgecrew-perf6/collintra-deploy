@@ -5,7 +5,11 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+            'bluebg': '#f7fbff'
+        }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
