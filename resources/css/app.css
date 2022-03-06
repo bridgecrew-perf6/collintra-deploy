@@ -35,7 +35,7 @@ p {
 } */
 
 a {
-    @apply hover:text-blue-500 cursor-pointer hover:underline !important
+    @apply hover:text-blue-500 cursor-pointer hover:underline !important;
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose p {
@@ -46,4 +46,12 @@ a {
 .prose
 {
     max-width: 100%;
+}
+
+/* https://alpinejs.dev/directives/cloak */
+[x-cloak=""] { display: none !important; }
+
+/* Help of https://dev.to/hus_hmd/alpine-js-responsive-x-cloak-3blp */
+@media screen and (max-width: 768px){
+    [x-cloak="mobile"] {display: none !important }
 }
