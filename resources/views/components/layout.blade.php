@@ -10,6 +10,7 @@
     <title>Collintra</title>
     @livewireStyles
 </head>
+<body class="bg-bluebg p-3 text-lg overflow-hidden">
     <div x-data="{menuOpen: false}">
         @include("header")
         {{ $slot }}
