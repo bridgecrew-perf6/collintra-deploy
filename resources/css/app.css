@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/*TODO: replace with local font before production release. More here: https://rsms.me/inter/*/
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 .menubtn {
     @apply text-2xl font-bold hover:text-blue-400 hover:underline cursor-pointer
 }
@@ -13,26 +20,6 @@
 input, textarea {
     @apply border-blue-300 border p-1 rounded-sm text-sm min-w-min
 }
-/*
-h1 {
-    @apply text-4xl mt-6
-}
-
-h2 {
-    @apply text-3xl mt-5
-}
-
-h3 {
-    @apply text-2xl  mt-5
-}
-
-h4 {
-    @apply text-xl
-}
-
-p {
-    @apply mb-3
-} */
 
 a {
     @apply hover:text-blue-500 cursor-pointer hover:underline !important;
