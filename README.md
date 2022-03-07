@@ -8,4 +8,4 @@ The development is really at the starting point, and I'm learning the frameworks
 
 ## Licences
 1. The application is released under [AGPLv3 or later](https://www.gnu.org/licenses/agpl-3.0.html).
-1. The documentation and logos are released under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). GIMP source files of logos are also available !
+1. The documentation (text and images) and logos (exports and source files) are released under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). GIMP source files of logos are available under the [docs/logo](docs/logo) folder.
