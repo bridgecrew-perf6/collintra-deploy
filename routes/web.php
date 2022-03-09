@@ -27,6 +27,11 @@ Route::get('/learn/{article}', function (Article $article) {
     return view('learn', ['articles' => $articles, 'currentArticle' => $article]);
 });
 
+Route::get('/learn/{article}/edit', function (Article $article) {
+    $articles = Article::with('articles')->get();
+    return view('learn', ['edit' => true, 'articles' => $articles, 'currentArticle' => $article]);
+});
+
 
 Route::get('/about', function () {
     return view('about');
