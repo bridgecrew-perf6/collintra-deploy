@@ -12,6 +12,7 @@
             <span>| Revisions: 8 </span>
 
             <span>| Contributors: 3 </span>
+            <span>| <button class="px-1 bg-blue-100 hover:bg-blue-300 rounded-md"><a href="/learn/{{ $currentArticle->id }}/edit">Edit this article</a> </button></span>
         </div>
     </div>
 
