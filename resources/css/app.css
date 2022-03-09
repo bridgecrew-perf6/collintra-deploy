@@ -21,8 +21,12 @@ input, textarea {
     @apply border-blue-300 border p-1 rounded-sm text-sm min-w-min
 }
 
+.articleLinks a {
+    @apply hover:text-blue-500/50 underline decoration-blue-600 cursor-pointer hover:underline !important;
+}
+
 a {
-    @apply hover:text-blue-500 cursor-pointer hover:underline !important;
+    @apply hover:text-blue-500/50 cursor-pointer hover:underline !important;
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4, .prose p {
