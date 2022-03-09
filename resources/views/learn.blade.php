@@ -13,9 +13,17 @@ use Carbon\Carbon;
 
         <div class="hidden md:block w-[250px]">fake menu space</div>
 
+        @if(isset($edit) && $edit == true)
+        <div class="max-w-full flex-1 mt-3 sm:h-[90vh] h-[75vh] w-full overflow-auto overflow-x-hidden">
+            @livewire('edit-article', ['article' => $currentArticle])
+        </div>
+
+        @else
         <div class="max-w-full flex-1 mt-3 sm:h-[90vh] h-[75vh] w-full overflow-auto overflow-x-hidden">
             @include('article-window', ['currentArticle' => $currentArticle])
         </div>
+
+        @endif
     </div>
     <script>
 
