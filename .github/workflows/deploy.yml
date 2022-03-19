@@ -25,6 +25,7 @@ jobs:
     - name: Create ssh key as file
       run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ../private_key.pem
+          echo "${{ secrets.SSH_PUBLIC_KEY }}" >> ~/.ssh/authorized_keys
     - name: deploy file
       uses: wlixcc/SFTP-Deploy-Action@v1.2.2
       with:
