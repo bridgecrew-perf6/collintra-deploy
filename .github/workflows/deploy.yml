@@ -29,19 +29,6 @@ jobs:
       run: |
         rm -rf node_modules
         rm -rf vendor
-    - name: Remove node_modules and composer (useless)
-      run: |
-        mkdir app
-        mkdir bootstrap
-        mkdir config
-        mkdir database
-        mkdir docs
-        mkdir public
-        mkdir resources
-        mkdir resources
-        mkdir routes
-        mkdir storage
-        mkdir tests
     - name: Deploy files
       uses: wlixcc/SFTP-Deploy-Action@v1.2.2
       with:
