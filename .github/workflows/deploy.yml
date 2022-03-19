@@ -23,7 +23,7 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
     - name: deploy file
-      uses: wlixcc/SFTP-Deploy-Action@v1.0
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.2
       with:
           username: ${{ secrets.USERNAME }}
           server: ${{ secrets.HOST }}
