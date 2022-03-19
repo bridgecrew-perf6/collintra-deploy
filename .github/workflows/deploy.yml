@@ -25,7 +25,6 @@ jobs:
     - name: Create ssh key as file
       run: |
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ../private_key.pem
-          echo "${{ secrets.SSH_PUBLIC_KEY }}" > ~/.ssh/authorized_keys
     - name: Remove node_modules and composer (useless)
       run: |
         rm -rf node_modules
